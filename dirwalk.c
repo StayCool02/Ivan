@@ -86,6 +86,16 @@ int filter_entry(const char *full_path, const char *name) {
 }
 
 /**
+ * @brief Выводит информацию об элементе (полный путь).
+ * @param full_path Полный путь к элементу.
+ */
+void print_entry(const char *full_path) {
+    // В простейшем случае, как у find, просто печатаем путь
+    printf("%s\n", full_path);
+}
+
+
+/**
  * @brief Добавляет элемент в динамический список для последующей сортировки.
  */
 void add_to_list(const char *full_path, const char *name) {
